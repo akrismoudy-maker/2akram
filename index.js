@@ -1,21 +1,17 @@
-console.log("hello world");
-const name=document.getElementById("name").value;
-const email=document.getElementById("email").value;
-const password=document.getElementById("password").value;
+console.log("Script loaded successfully!");
+const btn = document.getElementById("btn");
+const nom = document.getElementById("nom");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
 
-const submit=document.getElementById("btn");
-
-console.log(name);
-console.log(email);
-console.log(password);
-console.log(submit);
-
-submit.addEventListener("click",function(){
-    event.preventDefault();
-    console.log("button clicked");
-    console.log(name.value);
-    console.log(email.value);
-    console.log(password.value);
-
-    alert("name:" + nom.value + "\n" + "email:" + email.value + "\n" + "password:" + password.value);
-
+console.log(btn);
+console.log(nom.value);
+console.log(email.value);
+console.log(password.value);
+btn.addEventListener("click", function() {
+    console.log("Button clicked!");
+    console.log("Nom: " + nom.value);
+    console.log("Email: " + email.value);
+    console.log("Password: " + password.value);
+    alert("bonne inscription");
+});
